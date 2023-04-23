@@ -1,0 +1,12 @@
+{
+    "cg_fov": { 
+        "description": "",
+        "min": "",
+        "max": ""
+    },
+    "com_maxfps": {
+        "description": "",
+        "min": "0",
+        "max": "1000"
+    }
+}
