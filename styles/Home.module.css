@@ -1,0 +1,32 @@
+.main {
+    display: grid;
+    place-items: center;
+}
+
+/* CONFIG SELECTION */
+.configSelection {
+    display: flex;
+}
+
+.selectionBtn {
+    display: grid;
+    place-items: center;
+
+    margin: 1em;
+
+    border: 3px solid var(--accent-color);
+    border-radius: 20px;
+    width: 225px;
+    height: 250px;
+    cursor: pointer;
+    transition: 200ms ease;
+    font-size: 24px;
+}
+
+.selectionBtnImg {
+    width: 30%;
+}
+
+.selectionBtn:hover {
+    transform: scale(1.05);
+}
