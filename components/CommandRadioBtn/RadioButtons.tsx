@@ -31,6 +31,7 @@ export default function RadioButtons({ command, options } : Props) {
                     <p>{option.name}</p>
                     <input type='radio'
                         name={command.name}
+                        defaultChecked={value == option.value ? true : false}
                         onClick={() => setValue(option.value)}
                     />
                 </div>

@@ -57,7 +57,7 @@ export default function Home() {
             <RadioButtons command={GetCommandByName('cg_fov', config)} 
               options={{values:[
                 {name: 'hello', value: 104}, 
-                {name: 'goodbye', value:69}, 
+                {name: 'goodbye', value:65}, 
                 {name: 'new', value:420}
                 ]}}
               />

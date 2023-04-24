@@ -8,3 +8,120 @@ html, body {
   background: #111;
   color: white;
 }
+
+/* BUTTONS */
+button {
+  color: white;
+  background: #9900ff;
+  border: 3px solid #9900ff;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 0.75em 1em;
+}
+
+button:hover {
+  background: none;
+  border: 3px solid #9900ff;
+}
+
+button:active {
+  border: 3px solid #fff;
+}
+
+/* CHECKBOXES */
+[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9900ff;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Press & Hold - Clicked */
+[type="checkbox"]:active, [type="checkbox"]:checked:active {
+  border: 2px solid pink;
+}
+
+[type="checkbox"]:checked {
+  border: 2px solid #9900ff;
+}
+
+[type="checkbox"]:checked:after {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  background-color: #9900ff;
+  border-radius: 2px;
+  font-size: 12px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: #9900ff;
+}
+
+/* RADIO BUTTONS */
+
+[type="radio"] {
+  appearance: none;
+  border: 2px solid #9900ff;
+  padding: 9px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+[type="radio"]:checked::after {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  position: absolute;
+  top: 4px;
+  background: #9900ff;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+  text-shadow: 0px;
+  left: 4px;
+  font-size: 32px;
+}
+
+[type="radio"]:checked {
+  background-color: none;
+  color: #9900ff;
+  border: 1px sold #adb8c0;
+}
+
+/* SLIDER */
+[type="range"] {
+  appearance: none;
+  background-color: #9900ff;
+  border-radius: 10px;
+  height: 8px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  border: 2px solid #111;
+  background-color: #9900ff;
+}
+
+/* INPUT TEXT */
+[type="text"] {
+  appearance: none;
+  border: 3px solid #9900ff;
+  border-radius: 8px;
+  background: none;
+  color: #fff;
+
+  width: 50px;
+  padding: 0.2em 0.6em;
+  font-size: 18px;
+}
+
+[type="text"]:focus {
+  outline: none;
+} 
