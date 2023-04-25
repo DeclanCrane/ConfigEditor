@@ -47,6 +47,22 @@ export default function Home() {
         setConfig(JSON.parse(JSON.stringify(conf)));
       });
   }
+
+  function DownloadConfig(fileName: string, config: Config) {
+    // Rebuild the config
+    const confText = RebuildConfig(config);
+    // Create element
+    const element = document.createElement("a");
+    // Create blob
+    const file = new Blob([confText], {
+      type: 'text/plain'
+    });
+
+    element.href = URL.createObjectURL(file);
+    element.download = fileName;
+    document.body.appendChild(element);
+    element.click();
+  }
   
   function PrintCommand(name: string) {
     const comm = GetCommandByName(name, config);
@@ -92,6 +108,7 @@ export default function Home() {
             <button onClick={() => console.log(RebuildConfig(config))}>Rebuild Config</button>
             <button onClick={() => PrintCommand('cg_brass')}>Print Command</button>
             <button onClick={() => ReadLocalConfig('config_mp.cfg')}>Read Local</button>
+            <button onClick={() => DownloadConfig('config_mp.cfg', config)}>Download Config</button>
           </>
         : null }
       </main>
