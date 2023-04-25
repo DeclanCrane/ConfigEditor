@@ -38,6 +38,15 @@ export default function Home() {
     });
     reader.readAsText(file);
   }
+
+  function ReadLocalConfig(fileName : string) {
+    fetch(fileName)
+      .then(response => response.text())
+      .then(text => {
+        const conf = ParseConfig(text);
+        setConfig(JSON.parse(JSON.stringify(conf)));
+      });
+  }
   
   function PrintCommand(name: string) {
     const comm = GetCommandByName(name, config);
@@ -63,7 +72,7 @@ export default function Home() {
               <p>Upload Config</p>
             </label>
             <label className={styles.selectionBtn}>
-              <img src='upload-arrow.svg' className={styles.selectionBtnImg} style={{ transform: 'rotate(90deg)'}}/>
+              <img src='upload-arrow.svg' className={styles.selectionBtnImg} onClick={() => ReadLocalConfig('config_mp.cfg')} style={{ transform: 'rotate(90deg)'}}/>
               <p>Use Default</p>
             </label>
           </div>
@@ -82,6 +91,7 @@ export default function Home() {
             <button onClick={() => console.log(config)}>Print Config</button>
             <button onClick={() => console.log(RebuildConfig(config))}>Rebuild Config</button>
             <button onClick={() => PrintCommand('cg_brass')}>Print Command</button>
+            <button onClick={() => ReadLocalConfig('config_mp.cfg')}>Read Local</button>
           </>
         : null }
       </main>
