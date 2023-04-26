@@ -1,16 +1,19 @@
 .header {
-    display: grid;
-    place-items: center;
-    min-height: 300px;
-    width: 100%;
-    background-image: url("../../public/blackops-background.png");
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    background-color: var(--secondary-color);
 }
 
-.logo {
-    width: 30%;
+.toolbar {
+    margin: 0 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.highlight {
+    color: var(--accent-color);
 }

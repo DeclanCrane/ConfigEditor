@@ -1,6 +1,5 @@
 .main {
-    display: grid;
-    place-items: center;
+    padding: 4rem 12rem;
 }
 
 /* CONFIG SELECTION */
@@ -29,4 +28,12 @@
 
 .selectionBtn:hover {
     transform: scale(1.05);
+}
+
+/* TOOLBAR */
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem 2rem;
 }

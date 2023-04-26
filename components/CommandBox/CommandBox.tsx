@@ -6,10 +6,12 @@ import { Command } from '@/utils/config/ConfigParser'
 interface Props {
     command: Command;
     min: number,
-    max: number
+    max: number,
+    step: number,
+    name: string
 }
 
-export default function CommandBox({command, min, max} : Props) {
+export default function CommandBox({command, min, max, step, name} : Props) {
     const [value, setValue] = useState<number>(Number(command.value));
 
     useEffect(() => {
@@ -24,9 +26,9 @@ export default function CommandBox({command, min, max} : Props) {
 
     return (
         <div>
-            <p>{command.name}</p> 
+            <p>{name}</p> 
+            <Slider step={step} min={min} max={max} value={value} setValue={setValue}/>
             <input type='text' value={value} onChange={e => setValue(Number(e.target.value))}/>
-            <Slider min={min} max={max} value={value} setValue={setValue}/>
         </div>
     )
 }
