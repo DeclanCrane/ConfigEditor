@@ -1,6 +1,6 @@
 ## 💡 About This Project
 
-This projects makes editing your config for Call of Duty: Black Ops a breeze, and allows you to edit some hidden settings.
+This projects makes editing your config for Call of Duty: Black Ops a breeze, and allows editing of hidden settings.
 - ⚙ Optimize your network settings for decreased latency
 - 🎥 Decrease visual clutter and post processing effects
 - 🖥 Increase in-game performance
