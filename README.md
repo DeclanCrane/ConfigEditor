@@ -20,13 +20,14 @@ npm run dev
 
 1. Open [http://localhost:3000](http://localhost:3000) with your browser to use the config editor.
 
-2. Upload your games current config file, or start fresh with the default options.
-Tweak the desired options to your liking.
+1. Upload your games current config file, or start fresh with the default options.
 
-3. When you're finished save your edited config by pressing the download button.
+1. Tweak the desired options to your liking.
+
+1. When you're finished save your edited config by pressing the 'Download Config' button.
 Replace your current config with the new one you've downloaded.
 
-4. Always make sure to keep a backup of your original settings in case you need to revert back.
+**Always make sure to keep a backup of your original settings in case you need to revert back.**
 
 ## Credits
 
