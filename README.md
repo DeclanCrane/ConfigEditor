@@ -8,14 +8,14 @@ This projects makes editing your config for Call of Duty: Black Ops a breeze, an
 
 ## 🚀 Getting Started
 
-First, run the development server:
+First, install the required packages:
+```bash
+npm i
+```
 
+Second, run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 1. Open [http://localhost:3000](http://localhost:3000) with your browser to use the config editor.
